@@ -1,0 +1,10 @@
+{
+  "actions": [
+      {
+          "say": "Please self-isolate and monitor your symptoms. Reach out to your doctor as soon as you can."
+      },
+      {
+          "listen": false
+      }
+  ]
+}

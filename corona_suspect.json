@@ -1,0 +1,44 @@
+{
+ "actions": [
+   {
+     "collect": {
+       "name": "Covid19_Support",
+       "questions": [
+         {
+           "question": "How old are you?",
+           "name": "Age",
+           "type": "Twilio.NUMBER"
+         },
+         {
+           "question": "Do you have any medical conditions?",
+           "name": "Conditions",
+           "type": "Twilio.YES_NO"
+         },
+         {
+           "question": "Have you been in contact with anyone?",
+           "name": "Contact_YN",
+           "type": "Twilio.YES_NO"
+         },
+         {
+           "question": "Have you travelled to any other village or city?",
+           "name": "Villages_YN",
+           "type": "Twilio.YES_NO"
+         },
+         {
+           "question": "What is your first name?",
+           "name": "First_Name",
+           "type": "Twilio.FIRST_NAME"
+         },
+         {
+           "question": "What is your last name?",
+           "name": "Last_Name",
+           "type": "Twilio.LAST_NAME"
+         }
+       ],
+       "on_complete": {
+         "redirect": "http://d029d817.ngrok.io/followup"
+       }
+     }
+   }
+ ]
+}

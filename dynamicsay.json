@@ -1,0 +1,39 @@
+{
+	"actions": [
+		{
+			"collect": {
+				"name": "Covid19_Symptoms",
+				"questions": [
+					{
+						"question": "Do you have shortness of breath?",
+						"name": "Shortness of breath",
+						"type": "Twilio.YES_NO"
+					},
+					{
+						"question": "Do you have a fever?",
+						"name": "Fever",
+						"type": "Twilio.YES_NO"
+					},
+					{
+						"question": "Do you have chest pain?",
+						"name": "Chest Pain",
+						"type": "Twilio.YES_NO"
+					},
+					{
+						"question": "Do you have a cough?",
+						"name": "Cough",
+						"type": "Twilio.YES_NO"
+					},
+					{
+						"question": "Do you have bluish lips?",
+						"name": "Bluish Lips",
+						"type": "Twilio.YES_NO"
+					}
+				],
+				"on_complete": {
+					"redirect": "http://d029d817.ngrok.io/collect"
+				}
+			}
+		}
+	]
+}

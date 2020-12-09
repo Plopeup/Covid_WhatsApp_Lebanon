@@ -1,0 +1,39 @@
+{
+	"actions": [
+		{
+			"collect": {
+				"name": "Covid19_Conditions",
+				"questions": [
+					{
+						"question": "Do you have chronic lung disease or moderate to severe asthma?",
+						"name": "Lungs",
+						"type": "Twilio.YES_NO"
+					},
+					{
+						"question": "Do you have serious heart conditions?",
+						"name": "Heart",
+						"type": "Twilio.YES_NO"
+					},
+					{
+						"question": "Is your immune system compromised? This includes cancer treatment.",
+						"name": "Immune",
+						"type": "Twilio.YES_NO"
+					},
+					{
+						"question": "Has a professional diagnosed you as severely obese?",
+						"name": "Obese",
+						"type": "Twilio.YES_NO"
+					},
+					{
+						"question": "Are you pregnant?",
+						"name": "Pregnant",
+						"type": "Twilio.YES_NO"
+					}
+				],
+				"on_complete": {
+					"redirect": "http://d029d817.ngrok.io/contact"
+				}
+			}
+		}
+	]
+}

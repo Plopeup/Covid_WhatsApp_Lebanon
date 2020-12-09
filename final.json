@@ -1,0 +1,28 @@
+{
+ "actions": [
+   {
+     "collect": {
+       "name": "Covid19_Final",
+       "questions": [
+         {
+           "question": "Do you have access to sanatization equipment such as hand sanitizors and sanatization wipes?",
+           "name": "Sanatization",
+           "type": "Twilio.YES_NO"
+         },
+         {
+           "question": "What city or village do you live in?",
+           "name": "Home_Village"
+         },
+         {
+           "question": "Do you have access to clean water?",
+           "name": "Clean_Water",
+           "type": "Twilio.YES_NO"
+         }
+       ],
+       "on_complete": {
+         "redirect": "http://d029d817.ngrok.io/final_statement"
+       }
+     }
+   }
+ ]
+}

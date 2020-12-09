@@ -1,0 +1,18 @@
+{
+	"actions": [
+		{
+			"collect": {
+				"name": "Covid19_Contact",
+				"questions": [
+					{
+						"question": "Please give us the phone numbers of everyone you have physically contacted this week. The phone numbers should be seperated with a comma. Ex. 571XXXXXXX, 571XXXXXXX",
+						"name": "Phone_Number"
+					}
+				],
+				"on_complete": {
+					"redirect": "http://d029d817.ngrok.io/contact_results"
+				}
+			}
+		}
+	]
+}
